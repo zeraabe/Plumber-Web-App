@@ -1,0 +1,137 @@
+/* ===== TOP BAR COMPONENT ===== */
+.topbar {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: var(--white);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-left {
+  flex: 1;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-selector label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.language-dropdown {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.language-dropdown:hover,
+.language-dropdown:focus {
+  background: rgba(124, 58, 237, 0.2);
+  border-color: var(--primary-violet);
+  outline: none;
+}
+
+.language-dropdown option {
+  background: #1f2937;
+  color: var(--white);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+}
+
+.topbar-icon {
+  color: var(--accent-orange);
+  font-size: 1rem;
+}
+
+.topbar-separator {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topbar-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .topbar-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .topbar-item {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 8px 0;
+  }
+
+  .topbar-container {
+    padding: 0 var(--space-md);
+    gap: 8px;
+  }
+
+  .language-selector {
+    font-size: 0.8rem;
+  }
+
+  .topbar-item {
+    font-size: 0.8rem;
+    gap: 4px;
+  }
+
+  .topbar-icon {
+    font-size: 0.9rem;
+  }
+
+  .topbar-separator {
+    display: none;
+  }
+}
