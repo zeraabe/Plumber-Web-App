@@ -10,21 +10,21 @@ const Testimonials = () => {
       name: 'Robert William',
       role: 'CEO & Founder, TechCorp',
       text: 'Plumco provided exceptional service for our office plumbing needs. Their team was professional, efficient, and solved our complex plumbing issues.',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      avatar: '/images/testimonial-avatar.svg'
     },
     {
       id: 2,
       name: 'Ken Williamson',
       role: 'Homeowner',
       text: 'Emergency service at its best! When our pipes burst at 2 AM, Plumco responded within 30 minutes and fixed everything professionally.',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      avatar: '/images/testimonial-avatar.svg'
     },
     {
       id: 3,
       name: 'Sarah Miller',
       role: 'Property Manager',
       text: 'We\'ve been using Plumco for all our rental properties for 3 years. Reliable, affordable, and always professional. Highly recommend!',
-      avatar: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      avatar: '/images/testimonial-avatar.svg'
     },
   ];
 

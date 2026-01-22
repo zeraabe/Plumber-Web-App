@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%), url(https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)' }}>
+      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%), url("/images/contact-hero.svg")' }}>
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">Contact Us</h1>

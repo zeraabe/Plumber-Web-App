@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
+import { Image } from '../common';
 
 const BlogPage = () => {
   const blogPosts = [
@@ -64,7 +65,7 @@ const BlogPage = () => {
   return (
     <>
       <Header />
-      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%), url(https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)' }}>
+      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%), url("/images/blog-placeholder.svg")' }}>
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">Plumbing Blog</h1>
@@ -78,10 +79,11 @@ const BlogPage = () => {
           <div className="blog-grid">
             {blogPosts.map(post => (
               <article key={post.id} className="blog-card">
-                <img 
+                <Image 
                   src={post.image} 
                   alt={post.title}
                   className="blog-image"
+                  lazy
                 />
                 <div className="blog-content">
                   <div className="blog-meta">

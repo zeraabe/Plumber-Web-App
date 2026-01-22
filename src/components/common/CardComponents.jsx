@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Image, AvatarImage } from './ImageComponent';
 
 export const ServiceCard = ({ 
   icon, 
@@ -44,11 +44,11 @@ export const ProjectCard = ({
     tabIndex={onClick ? 0 : undefined}
     onKeyDown={onClick ? (e) => e.key === 'Enter' && onClick() : undefined}
   >
-    <img 
+    <Image 
       src={image} 
       alt={title}
       className="project-image"
-      loading="lazy"
+      lazy
     />
     <div className="project-content">
       <h3 className="project-title">{title}</h3>
@@ -69,11 +69,11 @@ export const TeamCard = ({
   bio = null
 }) => (
   <div className="team-card">
-    <img 
+    <Image 
       src={image} 
       alt={name}
       className="team-image"
-      loading="lazy"
+      lazy
     />
     <div className="team-info">
       <h3 className="team-name">{name}</h3>
@@ -114,11 +114,11 @@ export const BlogCard = ({
 }) => (
   <article className={`blog-card ${featured ? 'featured' : ''}`}>
     {featured && <span className="badge bg-danger mb-2">Featured</span>}
-    <img 
+    <Image 
       src={image} 
       alt={title}
       className="blog-image"
-      loading="lazy"
+      lazy
     />
     <div className="blog-content">
       <div className="blog-meta">
@@ -163,11 +163,10 @@ export const TestimonialCard = ({
       "{text}"
     </p>
     <div className="testimonial-author">
-      <img 
+      <AvatarImage 
         src={avatar} 
         alt={name}
-        className="author-avatar"
-        loading="lazy"
+        size="md"
       />
       <div className="author-info">
         <h4>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import { ValueCard } from '../common';
+import { ValueCard, Image } from '../common';
 
 const About = () => {
   const values = [
@@ -22,7 +22,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(72, 100, 179, 0.8) 100%), url("/images/1top.jpg")' }}>
+      <section className="hero" style={{ backgroundImage: 'linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(72, 100, 179, 0.8) 100%), url("/images/about-hero.svg")' }}>
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">About Plumco</h1>
@@ -47,10 +47,10 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img 
+              <Image 
                 src="/images/1p.jpg" 
                 alt="Our Team" 
-                style={{ borderRadius: 'var(--border-radius)', width: '100%' }}
+                className="rounded"
               />
             </div>
           </div>

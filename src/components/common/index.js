@@ -48,3 +48,18 @@ export {
   Divider,
   Breadcrumb
 } from './UtilityComponents';
+
+// Image Components
+export {
+  Image,
+  ImageCard,
+  AvatarImage,
+  BackgroundImageSection
+} from './ImageComponent';
+
+// Video Components
+export {
+  VideoPlayButton,
+  VideoModal,
+  VideoPreview
+} from './VideoComponent';

@@ -9,7 +9,7 @@ const Team = () => {
       id: 1, 
       name: 'Henry Barton', 
       role: 'Lead Plumber', 
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: '/images/team-member.svg',
       experience: '18 years',
       socialLinks: [
         { url: '#', icon: <FaFacebookF /> },
@@ -22,7 +22,7 @@ const Team = () => {
       id: 2, 
       name: 'Mattie Washington', 
       role: 'Plumbing Engineer', 
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: '/images/team-member.svg',
       experience: '14 years',
       socialLinks: [
         { url: '#', icon: <FaFacebookF /> },
@@ -35,7 +35,7 @@ const Team = () => {
       id: 3, 
       name: 'Winifred Harmon', 
       role: 'Service Manager', 
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: '/images/team-member.svg',
       experience: '12 years',
       socialLinks: [
         { url: '#', icon: <FaFacebookF /> },
@@ -48,7 +48,7 @@ const Team = () => {
       id: 4, 
       name: 'Shelia Lawrence', 
       role: 'Project Coordinator', 
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: '/images/team-member.svg',
       experience: '11 years',
       socialLinks: [
         { url: '#', icon: <FaFacebookF /> },

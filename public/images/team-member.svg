@@ -1,0 +1,23 @@
+<!-- SVG placeholder for team members -->
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#teamGrad)"/>
+  <!-- Professional profile -->
+  <circle cx="200" cy="120" r="70" fill="#22c55e" opacity="0.3"/>
+  <circle cx="200" cy="120" r="60" fill="#4ade80"/>
+  <!-- Head -->
+  <circle cx="200" cy="100" r="28" fill="#ffffff" opacity="0.85"/>
+  <!-- Shoulders -->
+  <ellipse cx="200" cy="180" rx="55" ry="50" fill="#ffffff" opacity="0.85"/>
+  <!-- Professional jacket -->
+  <path d="M 145 180 L 145 280 Q 200 300 255 280 L 255 180" fill="#86efac" opacity="0.6"/>
+  <!-- Name plate -->
+  <rect x="80" y="320" width="240" height="100" fill="#ffffff" rx="8" opacity="0.9"/>
+  <text x="200" y="360" font-size="16" font-weight="bold" text-anchor="middle" fill="#166534">Team Member</text>
+  <text x="200" y="385" font-size="13" text-anchor="middle" fill="#4ade80">Professional Position</text>
+</svg>

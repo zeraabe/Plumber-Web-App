@@ -9,6 +9,7 @@ import ServicesPage from './components/Pages/ServicesPage';
 import PortfolioPage from './components/Pages/PortfolioPage';
 import Contact from './components/Pages/Contact';
 import BlogPage from './components/Pages/BlogPage';
+import Booking from './components/Pages/Booking';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
       </div>
     </Router>
